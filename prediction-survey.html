@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Monitoring Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mood-test.html">Mood Test</a></li>
+                <li><a href="memory-test.html">Memory Test</a></li>
+                <li><a href="cognitive-test.html">Cognitive Test</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="prediction-survey.html">Mental Health Prediction</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#support">Virtual Counseling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="prediction-survey">
+        <h2>Mental Health Prediction</h2>
+        <p>Answer a few questions to get a personalized mental health prediction.</p>
+
+        <!-- Question 1: Energy Level -->
+        <label for="energy-level">How is your energy level today?</label>
+        <select id="energy-level">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+
+        <!-- Question 2: Sleep Quality -->
+        <label for="sleep-quality">How was your sleep last night?</label>
+        <select id="sleep-quality">
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <!-- Question 3: Stress Level -->
+        <label for="stress-level">How stressed are you feeling today?</label>
+        <select id="stress-level">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <!-- Question 4: Physical Activity -->
+        <label for="physical-activity">How much physical activity have you done this week?</label>
+        <select id="physical-activity">
+            <option value="none">None</option>
+            <option value="some">Some (1-2 days)</option>
+            <option value="regular">Regular (3+ days)</option>
+        </select>
+
+        <!-- Question 5: Diet -->
+        <label for="diet">How healthy was your diet this week?</label>
+        <select id="diet">
+            <option value="healthy">Healthy</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <!-- Question 6: Social Interaction -->
+        <label for="social-interaction">How much social interaction did you have this week?</label>
+        <select id="social-interaction">
+            <option value="high">High</option>
+            <option value="average">Average</option>
+            <option value="low">Low</option>
+        </select>
+
+        <!-- Button to trigger prediction -->
+        <button onclick="predictMentalHealth()">Get Prediction</button>
+
+        <!-- Display prediction -->
+        <div id="prediction-result"></div>
+    </section>
+
+    <!-- <footer>
+        <p>&copy; 2024 Mental Health Monitoring Tool</p>
+    </footer> -->
+
+    <script src="prediction-survey.js"></script>
+</body>
+</html>

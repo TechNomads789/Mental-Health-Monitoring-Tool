@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Monitoring Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mood-test.html">Mood Test</a></li>
+                <li><a href="memory-test.html">Memory Test</a></li>
+                <li><a href="cognitive-test.html">Cognitive Test</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="prediction-survey.html">Mental Health Prediction</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#support">Virtual Counseling</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Your Mental Health Monitoring Tool</h2>
+        <p>Monitor your mental health with interactive tests, track moods, assess symptoms, and access valuable resources for personalized support.</p>
+    </section>
+
+    <section id="resources">
+        <h2>Mental Health Resources</h2>
+        <ul>
+            <li><a href="https://www.who.int/health-topics/mental-health" target="_blank">WHO Mental Health Resources</a></li>
+            <li><a href="https://www.nimh.nih.gov/health/topics" target="_blank">NIMH Mental Health Topics</a></li>
+            <li><a href="https://www.mentalhealth.gov" target="_blank">MentalHealth.gov</a></li>
+        </ul>
+    </section>
+
+    <section id="support">
+        <h2>Virtual Counseling</h2>
+        <p>Securely chat with a licensed therapist for real-time support.</p>
+        <label for="message">Your message:</label>
+        <textarea id="message" rows="4" cols="50"></textarea>
+        <button onclick="sendMessage()">Send Message</button>
+        <div id="message-result"></div>
+    </section>
+
+    <!-- <footer>
+        <p>&copy; 2024 Mental Health Monitoring Tool</p>
+    </footer> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

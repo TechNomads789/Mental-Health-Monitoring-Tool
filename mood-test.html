@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mood Analysis Test</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mood-test.html">Mood Test</a></li>
+                <li><a href="memory-test.html">Memory Test</a></li>
+                <li><a href="cognitive-test.html">Cognitive Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mood-test">
+        <h2>How are you feeling today?</h2>
+        <p>Rate the following statements on a scale from 1 (Strongly Disagree) to 5 (Strongly Agree).</p>
+
+        <label for="q1">I feel happy today:</label>
+        <input type="number" id="q1" min="1" max="5">
+
+        <label for="q2">I feel anxious or stressed:</label>
+        <input type="number" id="q2" min="1" max="5">
+
+        <label for="q3">I am feeling motivated:</label>
+        <input type="number" id="q3" min="1" max="5">
+
+        <button onclick="calculateMood()">Submit</button>
+        <div id="mood-score"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mental Health Monitoring Tool</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

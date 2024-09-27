@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Monitoring Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mood-test.html">Mood Test</a></li>
+                <li><a href="memory-test.html">Memory Test</a></li>
+                <li><a href="cognitive-test.html">Cognitive Test</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="prediction-survey.html">Mental Health Prediction</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#support">Virtual Counseling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mood-tracker">
+        <h2>Mood Tracker</h2>
+        <p>Track your mood throughout the day and see how it changes over time.</p>
+        <label for="mood">How are you feeling right now?</label>
+        <select id="mood">
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="anxious">Anxious</option>
+            <option value="stressed">Stressed</option>
+            <option value="neutral">Neutral</option>
+        </select>
+        <button onclick="logMood()">Log Mood</button>
+        <div id="mood-log"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mental Health Monitoring Tool</p>
+    </footer>
+
+    <script src="mood-tracker.js"></script>
+</body>
+</html>

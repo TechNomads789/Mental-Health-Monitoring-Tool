@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Memory Recall Test</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mood-test.html">Mood Test</a></li>
+                <li><a href="memory-test.html">Memory Test</a></li>
+                <li><a href="cognitive-test.html">Cognitive Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="memory-test">
+        <h2>Test Your Memory</h2>
+        <p>Look at the following list of words. You will be asked to recall them after a short delay.</p>
+
+        <div id="word-list">
+            <ul>
+                <li>Apple</li>
+                <li>Chair</li>
+                <li>Tree</li>
+                <li>Sun</li>
+                <li>House</li>
+            </ul>
+        </div>
+
+        <button onclick="hideWords()">Hide Words</button>
+
+        <div id="recall-words" style="display:none;">
+            <h3>Recall the words</h3>
+            <textarea id="user-recall" rows="4" cols="50"></textarea>
+            <button onclick="checkMemory()">Submit</button>
+            <div id="memory-result"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mental Health Monitoring Tool</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
